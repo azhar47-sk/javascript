@@ -1,0 +1,45 @@
+we will use the push() method to add an object to
+the array in JavaScript.
+
+<!DOCTYPE html>
+<html>
+<Title>Array Program</title>
+<body>
+<h3> program to append an object to an array</h3>
+<script>
+function pushFunction() {
+list.push("Four", "Five");
+document.write(list);
+}
+// Diver Code
+let list = ["One", "Two", "Three"];
+pushFunction();
+</script>
+</body>
+</html>
+
+Program: program to check if an object is an array
+<!doctype HTML>
+<html>
+<head><title>program to check if an object is an array</title><head>
+<body>
+<h3>program to check if an object is an array</h3>
+<script>
+// program to check if an object is an array
+
+function checkObject(arr) {
+// check if arr is array
+const result = Array.isArray(arr);
+if(result) {
+document.write(`[${arr}] is an array.`);
+}
+else {
+document.write(`${arr} is not an array.`);
+}
+}
+const array = [1, 2, 3];
+// call the function
+checkObject(array);
+</script>
+</body>
+</html>
