@@ -1,0 +1,86 @@
+a) string
+<!doctype HTML>
+<html>
+<head><title>Reverse String</title><head>
+<body>
+<h3>Reverse String Using JavaScript</h3>
+
+<script>
+// program to reverse a string
+function reverseString(str) {
+// empty string
+let newString = "";
+for (let i = str.length - 1; i >= 0; i--) {
+newString += str[i];
+}
+return newString;
+}
+
+// take input from the user
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+document.write(result);
+
+</script>
+
+</body>
+</html>
+
+b)Replace Characters of string
+<!doctype HTML>
+<html>
+<head><title>Replace String</title><head>
+<body>
+<h3>Replace String Using JavaScript</h3>
+
+<script>
+// program to replace a character of a string
+const string = 'Mr Red has a red house and a red car';
+// replace the characters
+const newText = string.replace('red', 'blue');
+
+// display the result
+document.write(newText);
+
+</script>
+
+</body>
+</html>
+
+c)String is Palindrome
+<!doctype HTML>
+<html>
+<head><title>String Palindrome</title><head>
+<body>
+<h3>String Palindrome in JavaScript</h3>
+
+<script>
+// program to check if the string is palindrome or not
+
+function checkPalindrome(string) {
+
+// find the length of a string
+const len = string.length;
+
+// loop through half of the string
+for (let i = 0; i < len / 2; i++) {
+
+// check if first and last string are same
+if (string[i] !== string[len - 1 - i]) {
+return 'It is not a palindrome';
+}
+}
+return 'It is a palindrome';
+}
+// take input
+const string = prompt('Enter a string: ');
+// call the function
+const value = checkPalindrome(string);
+
+document.write(value);
+
+</script>
+</body>
+</html>
+
