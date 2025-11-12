@@ -1,3 +1,4 @@
+Rectangle
 <!DOCTYPE html>
 <html>
 <Title>Area Of Rectangle JS program</title>
@@ -18,4 +19,47 @@ Area = findArea();
 // displaying the area
 document.write("Area of rectangle is: " + Area);
 </script></body></html>
+
+
+
+<!DOCTYPE html>
+<html><head>
+<Title>Area Of Triangle JS program</title></head>
+<body>
+<h3>Area Of Triangle Javascript Program</h3>
+<script>
+const side1 = parseInt(prompt('Enter side1: '));
+const side2 = parseInt(prompt('Enter side2: '));
+const side3 = parseInt(prompt('Enter side3: '));
+// calculate the semi-perimeter
+const s = (side1 + side2 + side3) / 2;
+//calculate the area
+const areaValue = Math.sqrt(
+s * (s - side1) * (s - side2) * (s - side3));
+// displaying the area
+document.write(`The area of the triangle is ${areaValue}’);
+</script></body></html>
+
+
+
+<!DOCTYPE html>
+<html><head>
+<Title>Area Of Circle JS program</title></head>
+<body>
+<h3>Area Of Circle JavaScript Program</h3>
+<script>let pi = 3.14159265358979323846;
+// Function to calculate the area of circle
+function findArea(r) {
+return (pi * r * r);
+}
+// Driver code
+let r, Area;
+r = prompt("Enter Radius of circle");
+// Function calling
+Area = findArea(r);
+// displaying the area
+document.write("Area of Circle is: " + Area);
+</script>
+</body>
+</html>
 
