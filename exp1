@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<Title>Area Of Rectangle JS program</title>
+<body>
+<h3>Area Of Rectangle Javascript Program</h3>
+<script>
+let a,b
+// Function to calculate the area of rectangle
+function findArea() {
+return (a * b);
+}
+// Driver code
+let Area;
+a = prompt("Enter width of rectangle");
+b = prompt("Enter height of rectangle");
+// Function calling
+Area = findArea();
+// displaying the area
+document.write("Area of rectangle is: " + Area);
+</script></body></html>
+
